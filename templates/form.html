@@ -1,0 +1,113 @@
+<form>
+  <fieldset>
+    <h5>Datos administrativos</h5>
+    <div class="row">
+      <label class="large-2 columns">Nombre</label>
+      <div class="large-4 columns end">
+        <input type="text" ng-model="usuario.nombre" name="nombre" ng-maxlength="50" required>
+      </div>
+    </div>
+    <div class="row">
+      <label class="large-2 columns">Telefono</label>
+      <div class="large-4 columns end">
+        <input type="number" ng-model="usuario.telefono" name="telefono" ng-maxlength="50" required>
+      </div>
+    </div>
+    <div class="row">  
+      <label class="large-2 columns">Descripcion</label>
+      <div class="large-6 columns end">
+        <textarea ng-model="usuario.descripcion" name="descripcion" ng-maxlength="1000"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <label class="large-2 columns">Especialidades</label>  
+      <div class="large-6 columns end">
+        <textarea ng-model="usuario.especialidades" name="especialidades" ng-maxlength="500"></textarea>
+      </div>
+    </div>
+    <div class="row">  
+      <label class="large-2 columns">Direccion</label>
+      <div class="large-4 columns end">
+        <input type="text" ng-model="usuario.direccion" name="direccion" ng-maxlength="200">
+      </div>
+    </div>
+    <div class="row">  
+      <label class="large-2 columns horario">Horario de atencion</label>
+      <div class="large-2 columns">
+          <input type="time" ng-model="usuario.horario" required>
+      </div>      
+      <div class="small-2 columns end">     
+           <input type="time" ng-model="usuario.horario" required>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit"  class="button small-2 large-offset-8 columns">{{ textButton }}</button>
+      <a href="#/" class="button success small-1 large-2 columns">Cancelar</a>
+    </div>  
+  </fieldset>
+</form>
+<div class="large-12 columns">
+  <div class="large-6 columns">
+    <div class="row">
+      <fieldset>
+        <h5>Contacto comercial</h5>
+        <div class="row">
+          <label class="large-2 columns">Nombre</label>
+          <div class="large-6 columns end">
+            <input type="text" ng-model="usuario.nombre" name="nombre" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Apellido</label>
+          <div class="large-6 columns end">
+            <input type="text" ng-model="usuario.apellido" name="apellido" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Telefono</label>
+          <div class="large-6 columns end">
+            <input type="number" ng-model="usuario.telefono" name="telefono" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Email</label>
+          <div class="large-6 columns end">
+            <input type="email" ng-model="usuario.email" name="email" ng-maxlength="100" required>
+          </div>
+        </div>
+      </fieldset>
+    </div>  
+  </div>  
+  <div class="large-6 columns">
+    <div class="row">
+      <fieldset>
+        <h5>Contacto comercial</h5>
+        <input type="checkbox" ng-model="usuario.checkbox" ng-true-value="1" ng-false-value="0" ng-checked="checkbox == 1"> Idem contacto administrativo
+        <div class="row">
+          <label class="large-2 columns">Nombre</label>
+          <div class="large-6 columns end">
+            <input type="text" ng-model="usuario.nombre" name="nombre" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Apellido</label>
+          <div class="large-6 columns end">
+            <input type="text" ng-model="usuario.apellido" name="apellido" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Telefono</label>
+          <div class="large-6 columns end">
+            <input type="number" ng-model="usuario.telefono" name="telefono" ng-maxlength="50" required>
+          </div>
+        </div>
+        <div class="row">
+          <label class="large-2 columns">Email</label>
+          <div class="large-6 columns end">
+            <input type="email" ng-model="usuario.email" name="email" ng-maxlength="100" required>
+          </div>
+        </div>
+      </fieldset>
+    </div>  
+  </div>
+</div>  
